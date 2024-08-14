@@ -1,0 +1,68 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# MySQL
+*.myd
+*.myi
+*.ibd
+
+# VS Code
+.vscode/
+
+# IDEs and editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# PyCharm
+*.idea/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Django specific
+db.sqlite3
+media/
+staticfiles/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# Docker
+docker-compose.override.yml
+Dockerfile

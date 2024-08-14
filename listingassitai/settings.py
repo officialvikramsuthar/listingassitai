@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-nup+b_53&(p*2x@r6)gnubukh(4deui6z(p9m%(k_gnw&_5xod
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['204.236.135.232']
+ALLOWED_HOSTS = ['204.236.135.232', 'listingassistai.com']
 
 
 # Application definition
