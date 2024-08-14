@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-nup+b_53&(p*2x@r6)gnubukh(4deui6z(p9m%(k_gnw&_5xod
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['204.236.135.232', 'listingassistai.com', 'localhost:8000', '127.0.0.1']
+ALLOWED_HOSTS = ['204.236.135.232', 'listingassistai.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "sitepages"
+    "sitepages",
+    "Blog",
+    "ckeditor",
 ]
 
 MIDDLEWARE = [
@@ -122,8 +124,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
-
+STATIC_ROOT = "staticfiles"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+MEDIA_ROOT = "mediafiles"

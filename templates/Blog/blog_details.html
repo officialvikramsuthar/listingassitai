@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block 'head' %}
+<title>{{ blog.title }}</title>{% endblock %}
+
+{% block 'content' %}
+<div class="container">
+    <div class="">
+        <h1 class="my-1">{{ blog.title }}</h1>
+        <p class="text-sm text-gray-500 mb-2">Published on {{ blog.created }}</p>
+
+        <div class="text-lg text-gray-700 leading-relaxed">
+            {{ blog.content|safe }}
+        </div>
+    </div>
+
+    <!-- Back to Blog Link -->
+    <div class="mt-8">
+        <a href="{% url 'blog_list' %}" class="text-blue-500 hover:underline">← Back to Blog</a>
+    </div>
+</div>
+{% endblock %}

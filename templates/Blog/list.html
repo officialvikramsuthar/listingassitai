@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block 'head' %}{{blog.title}}{% endblock %}
+
+{% block 'content' %}
+<div class="container my-4">
+    <h2 class="text-3xl font-extrabold text-blue-600 mb-4">Here Are some of our blogs</h2>
+    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        Explore insightful articles on various topics. Stay updated with the latest trends, tips, and advice from industry experts.
+    </p>
+
+    <!-- Blog Post List -->
+    <div class="space-y-6">
+        <!-- Blog Post 1 -->
+        {% for blog in blogs %}
+        <div class="border-b pb-4">
+            <h3 class="text-2xl font-semibold text-gray-800">{{blog.title}}</h3>
+            <p class="text-sm text-gray-500 mb-2">Published on {{blog.created}}</p>
+            <p class="text-gray-700">
+                {{blog.content|slice:":100" | safe}}
+            </p>
+            <a href="{% url 'blog_detail' blog.pk blog.slug %}" class="text-blue-500 hover:underline mt-2 block">Read more &rarr;</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
