@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-nup+b_53&(p*2x@r6)gnubukh(4deui6z(p9m%(k_gnw&_5xod
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['204.236.135.232', 'listingassistai.com']
+ALLOWED_HOSTS = ['204.236.135.232', 'listingassistai.com', 'localhost:8000', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "sitepages"
 ]
 
 MIDDLEWARE = [
@@ -50,11 +51,16 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "listingassitai.urls"
+import os.path
 
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
+TEMPLATE_DIRS = [
+    os.path.join(PROJECT_PATH, 'templates/'),
+]
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
