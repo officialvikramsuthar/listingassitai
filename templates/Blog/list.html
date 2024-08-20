@@ -1,6 +1,11 @@
 {% extends "base.html" %}
-
-{% block 'head' %}{{blog.title}}{% endblock %}
+{% load static %}
+{% block 'head' %}
+<title>Expert tips on Property Listing, Image Enhancement, Real Estate Staging, Social Media Post Generator</title>
+<meta name="description" content="Explore our blog for expert tips and insights on property listing, image enhancement, real estate staging, social media post generation, and more. Stay ahead in the real estate market with the latest trends and tools." />
+<meta name="keywords" content="Property Listing Tips, Image Enhancement for Real Estate, Real Estate Staging Ideas, Social Media Post Generator, Real Estate Marketing, Home Selling Tips, Real Estate Photography, Digital Marketing for Realtors" />
+<link rel="canonical" href="{{request.build_absolute_uri}}" />
+{% endblock %}
 
 {% block 'content' %}
 <div class="container my-4">
@@ -13,14 +18,29 @@
     <div class="space-y-6">
         <!-- Blog Post 1 -->
         {% for blog in blogs %}
-        <div class="border-b pb-4">
-            <h3 class="text-2xl font-semibold text-gray-800">{{blog.title}}</h3>
-            <p class="text-sm text-gray-500 mb-2">Published on {{blog.created}}</p>
-            <p class="text-gray-700">
-                {{blog.content|slice:":100" | safe}}
-            </p>
-            <a href="{% url 'blog_detail' blog.pk blog.slug %}" class="text-blue-500 hover:underline mt-2 block">Read more &rarr;</a>
-        </div>
+          <div class="col-lg-4 col-md-8 col-sm-10">
+            <div class="single-blog blog-style-two">
+              <div class="blog-image">
+                <img src="{% static 'images/blog/3.jpg' %}" alt="Blog" />
+              </div>
+              <div class="blog-content">
+                <h4 class="blog-title">
+                  <a href="{% url 'blog_detail' blog.pk blog.slug %}">
+                    {{blog.title}}
+                  </a>
+                </h4>
+                <span><i class="lni lni-calendar"></i> {{blog.created}}</span>
+                <p class="text">
+                  {{blog.content|slice:":100" | safe}}
+                </p>
+                <a
+                  class="btn primary-btn-outline rounded-full"
+                  href="{% url 'blog_detail' blog.pk blog.slug %}"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
         {% endfor %}
     </div>
 </div>

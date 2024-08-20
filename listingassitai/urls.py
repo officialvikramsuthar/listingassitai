@@ -16,11 +16,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.views.generic import TemplateView
+from .sitemaps import StaticViewSitemap, BlogsSitemap
+from django.contrib.sitemaps.views import sitemap
 from sitepages.urls import urlpatterns as site_urls
+
+sitemaps = {
+    "static": StaticViewSitemap,
+    "blogs": BlogsSitemap,
+}
+
+
 urlpatterns = [
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": sitemaps},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
     path("admin/", admin.site.urls),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('blogs/', include('Blog.urls')),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
+    path('178107ba5fa4459d8b8a15028f4b0b1b.txt', TemplateView.as_view(template_name="indexnow.txt", content_type='text/plain')),
 ]
 
 urlpatterns = urlpatterns + site_urls

@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block 'head' %}
-<title>{{ blog.title }}</title>{% endblock %}
+<title>{{ blog.title }}</title>
+<meta name="description" content="{{blog.meta}}" />
+<meta name="keywords" content="{{blog.keywords}}" />
+<link rel="canonical" href="{{request.build_absolute_uri}}" />
+{% endblock %}
 
 {% block 'content' %}
 <div class="container">

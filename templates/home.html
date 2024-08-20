@@ -1,10 +1,327 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block 'head' %}
 <title>{{ blog.title }}</title>{% endblock %}
 
 {% block 'content' %}
-<div class="w-100 text-center d-flex justify-content-center" style="height:50vh">
-<h1>Coming Soon</h1>
-</div>
+    <section class="header-area header-two">
+      <div class="header-content-area d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-lg-end">
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
+              <div class="header-content">
+                <h3 class="header-title">Transform Your Real Estate Listings with AI.</h3>
+                <p class="text">
+                  AI-Powered Descriptions, Virtual Staging, Image Enhancement, & Social Media Posts, Boost your property listings, attract more buyers, and close deals faster with our AI-driven tools for real estate professionals.
+                </p>
+
+                <div class="header-btn rounded-buttons">
+                  <a
+                    class="btn primary-btn rounded-full"
+                    href="javascript:void(0)"
+                  >
+                    Get Started for Free
+                  </a>
+                </div>
+              </div>
+              <!-- header content -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+
+        <div class="header-image d-none d-lg-flex align-items-center">
+          <div class="image">
+            <img src="{% static 'images/header/task.svg' %}" alt="Header" />
+          </div>
+          <!-- image -->
+        </div>
+        <!-- header image -->
+      </div>
+      <!-- header content area -->
+    </section>
+
+     <section class="call-action-area call-action-one">
+      <div class="container">
+        <div class="row align-items-center call-action-content">
+          <div class="col-xl-8 col-lg-8">
+            <div class="call-action-text">
+              <h2 class="action-title">
+                Ready to Transform Your <br />Listings?
+              </h2>
+              <p class="text-lg">
+               Sign Up Now and Start Enhancing Your Real Estate Marketing Today!
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4">
+            <div class="call-action-btn rounded-buttons text-lg-end">
+              <a href="javascript:void(0)" class="btn primary-btn rounded-full">
+                Get Started Now
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+
+      <section class="services-area services-one" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-title">
+            <h4 class="title">Specializing In</h4>
+            <p class="text">
+              Stop wasting time and money designing and managing a website
+              that doesn’t get results. Happiness guaranteed!
+            </p>
+          </div>
+          <!-- section title -->
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="services-content">
+                <div class="services-icon">
+                  <i class="lni lni-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="services-title">AI-Powered Listing Descriptions</h4>
+                  <p class="text">
+                    Writing compelling property descriptions has never been easier. Our AI analyzes your property details and generates persuasive, SEO-friendly descriptions that attract more buyers.
+                  </p>
+                </div>
+              </div>
+              <!-- services content -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="services-content">
+                <div class="services-icon">
+                  <i class="lni lni-layout"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="services-title">Virtual Staging Made Simple</h4>
+                  <p class="text">
+                    Showcase your properties in the best light with our virtual staging tool. Add furniture, décor, and more to empty spaces, helping buyers visualize their dream home.
+                  </p>
+                </div>
+              </div>
+              <!-- services content -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="services-content">
+                <div class="services-icon">
+                  <i class="lni lni-layers"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="services-title">Image Enhancement</h4>
+                  <p class="text">
+                    Make your property photos stand out. Our advanced image enhancement tools improve lighting, remove blemishes, and enhance colors to make every listing picture-perfect.
+                  </p>
+                </div>
+              </div>
+              <!-- services content -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="services-content">
+                <div class="services-icon">
+                  <i class="lni lni-app-store"></i>
+                </div>
+                <div class="media-body">
+                  <h4 class="services-title">Social Media Post Generator</h4>
+                  <p class="text">
+                    Promote your listings on social media with ease. Our AI-powered Social Media Post Generator creates attention-grabbing posts tailored for platforms like Instagram, Facebook, and LinkedIn, helping you reach a broader audience.
+                  </p>
+                </div>
+              </div>
+              <!-- services content -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    <div class="services-image d-lg-flex align-items-center">
+      <div class="image">
+        <img src="{% static '/images/services/strolling.svg' %}" alt="Services" />
+      </div>
+    </div>
+    <!-- services image -->
+  </section>
+    <!--====== TESTIMONIAL ONE PART START ======-->
+
+  <section class="testimonial-one">
+    <!--======  Start Section Title Seven ======-->
+    <div class="section-title-seven">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title align-center">
+              <span> Testimonial </span>
+              <h2 class="fw-bold">What People Says</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!--====== End Section Title Seven ======-->
+    <div class="container">
+      <div class="testimonial-one-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-12">
+            <div class="row testimonial-one-active">
+              <div class="col-lg-4">
+                <div class="single-testimonial text-center">
+                  <div class="testimonial-image">
+                    <img src="{% static '/images/testimonial/author-1.jpg' %}" alt="Author" />
+                    <div class="quote-icon">
+                      <i class="lni lni-quotation"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="text">
+                      This tool has transformed the way I create listings. The AI descriptions are spot on, and the virtual staging has helped my properties sell faster.
+                    </p>
+                    <h6 class="author-name"> Sarah M.</h6>
+                    <span class="sub-title">Real Estate Agent</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+              <div class="col-lg-4">
+                <div class="single-testimonial text-center">
+                  <div class="testimonial-image">
+                    <img src="{% static '/images/testimonial/author-2.jpg' %}" alt="Author" />
+                    <div class="quote-icon">
+                      <i class="lni lni-quotation"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="text">
+                       The social media post generator has saved me so much time! I can now promote my listings on Instagram and Facebook with just a few clicks.
+                    </p>
+                    <h6 class="author-name">Emily T.</h6>
+                    <span class="sub-title">Realtor</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+              <div class="col-lg-4">
+                <div class="single-testimonial text-center">
+                  <div class="testimonial-image">
+                    <img src="{% static '/images/testimonial/author-3.jpg' %}" alt="Author" />
+                    <div class="quote-icon">
+                      <i class="lni lni-quotation"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="text">
+                      This tool has transformed the way I create listings. The AI descriptions are spot on, and the virtual staging has helped my properties sell faster.
+                    </p>
+                    <h6 class="author-name">John D.</h6>
+                    <span class="sub-title">Realtor</span>
+                  </div>
+                </div>
+                <!-- single testimonial -->
+              </div>
+                <!-- single testimonial -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== TESTIMONIAL ONE PART ENDS ======-->
+
+      <!--====== CONTACT TWO PART START ======-->
+
+  <section class="contact-area contact-area-two" id="contact_us">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 col-lg-7">
+          <div class="section-title-2 text-center">
+            <h3 class="title">Love to hear from you</h3>
+          </div>
+          <!-- section title -->
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row">
+        <div class="col-xl-5 col-lg-6">
+          <div class="contact-two">
+            <h4 class="contact-title">Let's talk about the project</h4>
+            <p class="text">
+              Have questions or need assistance? We're here to help! Whether you need support, want to provide feedback, or just want to say hello, feel free to reach out. Our team will get back
+            </p>
+            <ul class="contact-info">
+              <li>
+                <i class="lni lni-money-location"></i> Elizabeth St,
+                Melbourne, Australia
+              </li>
+              <li><i class="lni lni-phone"></i> +333 789-321-654</li>
+              <li><i class="lni lni-envelope"></i> hello@ayroui.com</li>
+            </ul>
+          </div>
+          <!-- contact two -->
+        </div>
+        <div class="col-xl-6 col-lg-6 offset-xl-1">
+          <div class="contact-form form-style-one">
+            <form action="#">
+              <div class="form-input">
+                <label>Name</label>
+                <div class="input-items default">
+                  <input type="text" placeholder="Name" />
+                  <i class="lni lni-user"></i>
+                </div>
+              </div>
+              <!-- form input -->
+              <div class="form-input">
+                <label>Email</label>
+                <div class="input-items default">
+                  <input type="text" placeholder="Email" />
+                  <i class="lni lni-envelope"></i>
+                </div>
+              </div>
+              <!-- form input -->
+              <div class="form-input">
+                <label>Massage</label>
+                <div class="input-items default">
+                  <textarea placeholder="Massage"></textarea>
+                  <i class="lni lni-pencil-alt"></i>
+                </div>
+              </div>
+              <!-- form input -->
+              <div class="form-input standard-buttons">
+                <button class="btn primary-btn square">Submit</button>
+              </div>
+              <!-- form input -->
+            </form>
+          </div>
+          <!-- contact form -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== CONTACT TWO PART ENDS ======-->
 {% endblock %}

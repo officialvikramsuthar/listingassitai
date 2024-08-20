@@ -1,24 +1,50 @@
-<nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid container">
-      <a class="navbar-brand" href="/">Listing Assit AI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blogs">Blogs</a>
-          </li>
-        </ul>
+{% load static %}
+    <section class="navbar-area navbar-six">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="/">
+                Listing Assist AI
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSix"
+                aria-controls="navbarSix"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSix">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="javascript:void(0)"
+                      >Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/blogs">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/#contact_us">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
       </div>
-    </div>
-  </nav>
+      <!-- container -->
+    </section>
